@@ -1,0 +1,142 @@
+.htb {
+    background-color: $blue;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: -174px;
+        width: 378px;
+        height: 219px;
+        background: url('../images/cash.png') center/cover no-repeat;
+        z-index: 1;
+    }
+}
+
+.htb__inner {
+    padding: 50px 100px;
+}
+
+
+
+
+.htb__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    z-index: 10;
+    position: relative;
+}
+
+.htb__title {
+    color: $white;
+    font-size: 99px;
+    font-weight: 400;
+    line-height: 148px;
+    margin-bottom: 10px;
+}
+
+.htb__item {
+    width: calc(33% - 40px);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.htb__subtitle {
+    color: $white;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 66px;
+    margin-bottom: 20px;
+}
+
+.htb__text {
+    margin-top: auto;
+    color: $white;
+    font-family: $secondary-fonts;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.htb__accent {
+    color: $white;
+    font-family: $secondary-fonts;
+    border-bottom: 1px solid $white;
+}
+
+@media (max-width: 1120px) {
+    .htb {
+        &::after {
+            top: -40px;
+        }
+    }
+
+    .htb__inner {
+        padding: 30px 60px;
+    }
+}
+
+@media (max-width: 990px) {
+    .htb__inner {
+        padding: 20px 40px;
+    }
+
+    .htb__item {
+        width: calc(50% - 40px);
+    }
+
+}
+
+@media (max-width: 768px) {
+    .htb__inner {
+        padding: 15px 30px 30px;
+    }
+
+    .htb__title {
+        font-size: 72px;
+    }
+
+    .htb__subtitle {
+        font-size: 38px;
+    }
+
+    .htb__text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 575px) {
+    .htb {
+        &::after {
+            top: -60px;
+        }
+    }
+
+    .htb__inner {
+        padding: 15px 30px;
+    }
+
+    .htb__item {
+        width: calc(100% - 40px);
+    }
+
+    .htb__title {
+        font-size: 62px;
+    }
+
+    .htb__subtitle {
+        font-size: 32px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .htb__text {
+        font-size: 24px;
+    }
+}

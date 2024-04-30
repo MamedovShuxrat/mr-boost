@@ -1,0 +1,23 @@
+.wall__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wall__img {
+    width: 623px;
+    height: 482px;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .wall__inner {
+        padding: 15px 30px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

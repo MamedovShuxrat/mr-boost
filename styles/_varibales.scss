@@ -1,0 +1,25 @@
+$white: #fff;
+$dark: #000;
+$blue: #004AAD;
+$red: #FF0000;
+// colors
+
+$primary-fonts: 'Just Me Again Down Here';
+$secondary-fonts: 'Long Cang';
+// Fonts
+
+@font-face {
+    font-display: swap;
+    font-family: 'Just Me Again Down Here';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/just-me-again-down-here-v24-latin_latin-ext-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Long Cang';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/long-cang-v17-latin-regular.woff2') format('woff2');
+}

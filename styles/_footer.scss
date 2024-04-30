@@ -1,0 +1,24 @@
+.footer {
+    margin-top: 80px;
+    background-color: $dark;
+}
+
+.footer__inner {
+    padding: 56px 70px;
+    color: $white;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 66px;
+    text-align: center;
+}
+
+@media (max-width: 575px) {
+    .footer {
+        margin-top: 20px;
+    }
+
+    .footer__inner {
+        padding: 15px 30px;
+        font-size: 30px;
+    }
+}

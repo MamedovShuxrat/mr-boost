@@ -1,0 +1,585 @@
+@font-face {
+  font-display: swap;
+  font-family: "Just Me Again Down Here";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/just-me-again-down-here-v24-latin_latin-ext-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Long Cang";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/long-cang-v17-latin-regular.woff2") format("woff2");
+}
+.header {
+  background-color: #004AAD;
+  position: relative;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 424px;
+  height: 424px;
+  background: url("../images/boost.png") center/cover no-repeat;
+  z-index: 1;
+}
+
+.header__inner {
+  padding: 0 116px 0 39px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+.header__logo {
+  color: #fff;
+  font-size: 83px;
+  font-weight: 400;
+  line-height: 124px;
+}
+
+.header__nav {
+  margin-top: 44px;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+
+.header__link {
+  color: #fff;
+  white-space: nowrap;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.header__btn {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  padding: 9px 9px 20px 9px;
+  font-family: inherit;
+  white-space: nowrap;
+  border: none;
+  border-radius: 16px;
+  display: block;
+  background-color: #FF0000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header__btn:hover {
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header__content {
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__content-link {
+  margin-top: 40px;
+}
+
+.header__content-img {
+  width: 215px;
+  height: 169px;
+}
+
+.header__title {
+  color: #fff;
+  font-size: 144px;
+  font-weight: 400;
+  line-height: 216px;
+}
+
+.header__subtitle {
+  color: #fff;
+  font-size: 76px;
+  font-weight: 400;
+  line-height: 114px;
+  margin-left: 40px;
+  margin-top: -80px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
+}
+
+.social__item {
+  width: 61px;
+  height: 61px;
+  display: block;
+  cursor: pointer;
+}
+
+.tg {
+  background: url("../images/tg.svg") center/cover no-repeat;
+}
+
+.x {
+  background: url("../images/x.svg") center/cover no-repeat;
+}
+
+.und {
+  background: url("../images/und.svg") center/cover no-repeat;
+}
+
+.header__empty {
+  width: 602px;
+  height: 39px;
+  border-radius: 8px;
+  margin: 24px 0 44px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .header__menu {
+    margin-bottom: 120px;
+  }
+  .header::after {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 1120px) {
+  .header__menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .header__nav {
+    margin-top: 34px;
+  }
+  .header__empty {
+    width: 500px;
+  }
+  .header__title {
+    font-size: 112px;
+  }
+  .header__subtitle {
+    font-size: 48px;
+    margin-top: -105px;
+  }
+  .social {
+    margin-top: 0;
+  }
+  .header__content-img {
+    width: 200px;
+  }
+}
+@media (max-width: 990px) {
+  .header__menu {
+    margin-bottom: 60px;
+  }
+  .header__inner {
+    padding: 0 39px;
+  }
+  .header__content-img {
+    width: 160px;
+  }
+  .header__nav {
+    margin-top: 24px;
+  }
+  .header__empty {
+    width: 300px;
+    margin: 12px 0 24px;
+  }
+  .header__title {
+    font-size: 76px;
+  }
+  .header__subtitle {
+    font-size: 36px;
+    margin-top: -125px;
+  }
+  .social {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .header::after {
+    width: 210px;
+    height: 255px;
+  }
+  .header__inner {
+    padding: 0 20px;
+  }
+  .header__menu {
+    margin-bottom: 0;
+  }
+  .header__title {
+    font-size: 66px;
+  }
+  .header__content-link {
+    margin-top: 70px;
+  }
+  .header__content-img {
+    width: 120px;
+    height: 120px;
+  }
+  .header__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__nav {
+    margin-top: 0;
+  }
+  .header__btn {
+    margin-top: 10px;
+  }
+  .header__empty {
+    width: 220px;
+  }
+  .header__subtitle {
+    font-size: 30px;
+  }
+  .social {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .header::after {
+    display: none;
+  }
+  .header__wrapper {
+    position: relative;
+  }
+  .header__wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    right: -70px;
+    width: 75px;
+    height: 75px;
+    background: url("../images/boost-mobile.png") center/cover no-repeat;
+    z-index: 1;
+  }
+  .header__content-img {
+    width: 68px;
+    height: 53px;
+  }
+  .header__title {
+    font-size: 51px;
+  }
+  .header__subtitle {
+    font-size: 25px;
+    margin-top: -130px;
+  }
+  .header__content-link {
+    margin-top: 90px;
+  }
+  .social__item {
+    width: 54px;
+    height: 54px;
+  }
+  .header__empty {
+    width: 338px;
+  }
+  .header__empty {
+    width: 200px;
+  }
+  .header__content {
+    justify-content: center;
+  }
+}
+.about {
+  background-color: #fff;
+}
+
+.about__inner {
+  display: flex;
+  align-items: center;
+  padding: 35px 72px;
+}
+
+.about__visual {
+  margin-right: 61px;
+}
+
+.about__img-box {
+  border: 1px solid #000;
+  background-color: #004AAD;
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.about__context {
+  text-align: center;
+}
+
+.about__title {
+  color: #000;
+  font-size: 83px;
+  font-weight: 400;
+  line-height: 124px;
+  margin-bottom: 42px;
+}
+
+.about__text {
+  color: #000;
+  font-family: "Long Cang";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.about__accent {
+  color: #000;
+  font-family: "Long Cang";
+  border-bottom: 1px solid #000;
+}
+
+@media (max-width: 990px) {
+  .about__inner {
+    padding: 28px 36px;
+    align-items: flex-start;
+  }
+  .about__title {
+    font-size: 72px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .about__inner {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about__visual {
+    margin-right: 0;
+  }
+}
+@media (max-width: 575px) {
+  .about__title {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  .about__text {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+}
+.htb {
+  background-color: #004AAD;
+  position: relative;
+}
+.htb::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -174px;
+  width: 378px;
+  height: 219px;
+  background: url("../images/cash.png") center/cover no-repeat;
+  z-index: 1;
+}
+
+.htb__inner {
+  padding: 50px 100px;
+}
+
+.htb__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  z-index: 10;
+  position: relative;
+}
+
+.htb__title {
+  color: #fff;
+  font-size: 99px;
+  font-weight: 400;
+  line-height: 148px;
+  margin-bottom: 10px;
+}
+
+.htb__item {
+  width: calc(33% - 40px);
+  display: flex;
+  flex-direction: column;
+}
+
+.htb__subtitle {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 66px;
+  margin-bottom: 20px;
+}
+
+.htb__text {
+  margin-top: auto;
+  color: #fff;
+  font-family: "Long Cang";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.htb__accent {
+  color: #fff;
+  font-family: "Long Cang";
+  border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 1120px) {
+  .htb::after {
+    top: -40px;
+  }
+  .htb__inner {
+    padding: 30px 60px;
+  }
+}
+@media (max-width: 990px) {
+  .htb__inner {
+    padding: 20px 40px;
+  }
+  .htb__item {
+    width: calc(50% - 40px);
+  }
+}
+@media (max-width: 768px) {
+  .htb__inner {
+    padding: 15px 30px 30px;
+  }
+  .htb__title {
+    font-size: 72px;
+  }
+  .htb__subtitle {
+    font-size: 38px;
+  }
+  .htb__text {
+    font-size: 28px;
+  }
+}
+@media (max-width: 575px) {
+  .htb::after {
+    top: -60px;
+  }
+  .htb__inner {
+    padding: 15px 30px;
+  }
+  .htb__item {
+    width: calc(100% - 40px);
+  }
+  .htb__title {
+    font-size: 62px;
+  }
+  .htb__subtitle {
+    font-size: 32px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .htb__text {
+    font-size: 24px;
+  }
+}
+.wall__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wall__img {
+  width: 623px;
+  height: 482px;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .wall__inner {
+    padding: 15px 30px;
+  }
+  .wall__inner img {
+    max-width: 100%;
+  }
+}
+.footer {
+  margin-top: 80px;
+  background-color: #000;
+}
+
+.footer__inner {
+  padding: 56px 70px;
+  color: #fff;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 66px;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .footer {
+    margin-top: 20px;
+  }
+  .footer__inner {
+    padding: 15px 30px;
+    font-size: 30px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Just Me Again Down Here";
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
