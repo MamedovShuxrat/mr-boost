@@ -52,7 +52,7 @@
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 48px;
-       column-gap: 48px;
+  column-gap: 48px;
 }
 
 .header__link {
@@ -124,7 +124,7 @@
   justify-content: center;
   margin-top: 26px;
   -moz-column-gap: 90px;
-       column-gap: 90px;
+  column-gap: 90px;
 }
 
 .social__item {
@@ -152,6 +152,10 @@
   border-radius: 8px;
   margin: 24px 0 44px;
   background: rgba(255, 255, 255, 0.3);
+}
+
+.mobile {
+  display: none;
 }
 
 @media (max-width: 1200px) {
@@ -215,7 +219,7 @@
   }
   .social {
     -moz-column-gap: 50px;
-         column-gap: 50px;
+    column-gap: 50px;
   }
 }
 @media (max-width: 768px) {
@@ -258,25 +262,20 @@
   }
   .social {
     -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
 }
 @media (max-width: 575px) {
   .header::after {
     display: none;
   }
-  .header__wrapper {
-    position: relative;
-  }
-  .header__wrapper::after {
-    content: "";
-    position: absolute;
-    bottom: 50%;
-    right: -70px;
+  .header__mobile-img {
     width: 75px;
     height: 75px;
-    background: url("../images/boost-mobile.png") center/cover no-repeat;
-    z-index: 1;
+    margin-top: 90px;
+  }
+  .mobile {
+    display: block;
   }
   .header__content-img {
     width: 68px;
@@ -389,12 +388,16 @@
 }
 .htb {
   background-color: #004AAD;
+  overflow: hidden;
+}
+
+.htb__inner {
   position: relative;
 }
-.htb::after {
+.htb__inner::after {
   content: "";
   position: absolute;
-  top: -30px;
+  top: 0px;
   right: -174px;
   width: 378px;
   height: 219px;
@@ -455,9 +458,6 @@
 }
 
 @media (max-width: 1120px) {
-  .htb::after {
-    top: -40px;
-  }
   .htb__inner {
     padding: 30px 60px;
   }
@@ -485,8 +485,13 @@
   }
 }
 @media (max-width: 575px) {
-  .htb::after {
-    top: -60px;
+  .htb__inner {
+    position: relative;
+  }
+  .htb__inner::after {
+    position: absolute;
+    width: 247px;
+    height: 143px;
   }
   .htb__inner {
     padding: 15px 30px;
